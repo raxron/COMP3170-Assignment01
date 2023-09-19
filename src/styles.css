@@ -55,3 +55,16 @@
   float: right;
   color: green;
 }
+.story__close {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: rgba(50, 50, 50, 0.7);
+  width: 2.2em;
+  height: 1.25em;
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+.story__close:hover {
+  color: green;
+  background-color: ivory;
+}

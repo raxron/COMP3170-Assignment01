@@ -24,6 +24,12 @@ export default function Card() {
 
     const limitDesc = limitDescription(info.description, 25);
 
+    //close button
+    function onClickClose(event) {
+      const element = event.target.parentElement;
+      element.remove();
+    }
+
     return (
       <>
         <div className="story" key={info.id}>
@@ -40,6 +46,9 @@ export default function Card() {
               Read More
             </a>
           </div>
+          <span className="story__close" onClick={onClickClose}>
+            x
+          </span>
         </div>
       </>
     );
